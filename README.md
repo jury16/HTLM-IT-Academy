@@ -1,5 +1,3 @@
-#hello-worlg
+#Repository for the cource HTML in IT-Academy
 
-My first repository on GitHub
 
-I love :coffee: :pizza: , and :cookie:.
