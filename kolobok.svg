@@ -1,0 +1,24 @@
+<svg width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <ellipse cx="500" cy="400" rx="50" ry="10" fill="#D3D3D3"></ellipse>
+        <circle cx="500" cy="340" r="60" fill="#FFD700"> </circle>
+        <circle cx="510" cy="325" r="25" fill="white"> </circle>
+        <circle cx="480" cy="325" r="25" fill="white"> </circle>
+        <circle cx="505" cy="325" r="5" fill="black"> </circle>
+        <circle cx="475" cy="325" r="5" fill="black"> </circle>
+        <ellipse cx="500" cy="370" rx="5" ry="10" fill="red"></ellipse>
+
+        <ellipse cx="360" cy="240" rx="50" ry="15" fill="#FFA500" style="transform:rotate(20deg)"></ellipse>
+        <polygon points="210,330 235,330 225,350" fill="white" stroke="none"></polygon>
+        <ellipse cx="350" cy="400" rx="50" ry="10" fill="#D3D3D3"></ellipse>
+        <circle cx="350" cy="340" r="65" fill="#FFA500"> </circle>
+        <circle cx="380" cy="325" r="25" fill="white"> </circle>
+        <circle cx="350" cy="325" r="25" fill="white"> </circle>
+        <circle cx="385" cy="325" r="5" fill="black"> </circle>
+        <circle cx="355" cy="325" r="5" fill="black"> </circle>
+        <circle cx="365" cy="350" r="8" fill="black"> </circle>
+        <polygon points="305,300 305,275 330,280" fill="#FFA500" stroke="none"></polygon>
+        <polygon points="308,292 308,278 322,282" fill="black" stroke="none"></polygon>
+        <polygon points="360,290 385,267 395,300" fill="#FFA500" stroke="none"></polygon>
+        <polygon points="374,280 384,271 390,290" fill="black" stroke="none"></polygon>
+        <ellipse cx="350" cy="370" rx="10" ry="5" fill="red"></ellipse>
+    </svg>
