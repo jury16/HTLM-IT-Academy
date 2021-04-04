@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title></title>
+    <style>
+        div {
+            margin: 50px;
+
+        }
+        a {
+            display: inline-block;
+            width: 250px;
+            background-color: lightgrey;
+            border-radius: 10px;
+            color: white;
+            padding: 1em 1.5em;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: black;
+        }
+            a:hover {
+                background-color: red;
+                color: white;
+            }
+            a:active{
+               transform: scale(1.1,1.1);
+            }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#" onclick="setCountry()">set country information</a>
+    </div>
+    <div>
+        <a href="#" onclick="getCountry()">get country information</a>
+    </div>
+    <div>
+        <a href="#" onclick="registerCountries()">register of all countries</a>
+    </div>
+    <div>
+        <a href="#" onclick="clearCountry()">clear country information</a>
+    </div>
+    <script type='text/javascript' src="countries.js"></script>
+    <script type='text/javascript' src="script.js"></script>
+    
+</body>
+
+</html>
