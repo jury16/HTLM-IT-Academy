@@ -1,0 +1,734 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>table-text-2</title>
+    <style>
+        .table_style {
+            border-collapse: collapse;
+            border: 0px;
+            width: 100%;
+            text-transform: uppercase;
+        }
+        .header_style {
+            background: #888888;
+            color: #ffffff;
+        }
+        .cell {
+            border-width: 2px;
+            border-style: solid;
+            border-color: blue;
+            padding: 5px;
+        }
+        .cell_body {
+            text-align: center;
+        }
+        .cell_text_left {
+            text-align: left;
+        }
+        .cell_text_right {
+            text-align: right;
+            text-transform: none;
+        }
+        .red {
+            background-color: red;
+        }
+
+        .greeny {
+            background-color: greenyellow;
+        }
+
+        .table1_cell {
+            width: 30px;
+            height: 30px;
+        }
+
+        .table2_cell {
+            width: 20px;
+            height: 20px;
+        }
+        .table3_cell {
+            width: 20px;
+            height: 25px;
+        }
+
+        .table_properties {
+            width: auto;
+            height: auto;
+            margin: 10px auto;
+            border-spacing: 0px;
+        }
+        .burgundy {
+            background-color: #ff1493;
+        }
+
+        .pirple {
+            background-color: #ee82ee;
+        }
+
+        .crimson {
+            background-color: #ff69b4;
+        }
+
+        .beige {
+            background-color: #ffb6c1;
+        }
+
+        .green {
+            background-color: #228022;
+        }
+
+        .green_light {
+            background-color: #3cb371;
+        }
+
+        .green_salad {
+            background-color: #32cd32;
+        }
+
+        .green_salad_light {
+            background-color: #00ff00;
+        }
+        .green_tab3 {
+            background-color: #008000;
+        }
+
+        .green_tab3_light {
+            background-color: #2e8b57;
+        }
+
+        .green_tab3_salad {
+            background-color: #3cb371;
+        }
+
+        .green_tab3_salad_light {
+            background-color: #32cd32;
+        }
+
+        .brown {
+            background-color: #8a4513;
+        }
+
+        .brown_light {
+            background-color: #b8860b;
+        }
+
+        .black {
+            background-color: #000000;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <h1>
+        Пример сложной таблицы
+    </h1>
+
+    <table class="table_style">
+        <thead class="header_style">
+            <tr>
+                <th class="cell">Название1</th>
+                <th class="cell">Название2</th>
+                <th class="cell">Ещё название</th>
+                <th class="cell">Куча элементов</th>
+                <th class="cell">Список1</th>
+                <th class="cell">Список2</th>
+            </tr>
+        </thead>
+        <tbody class="cell_body">
+            <tr>
+                <td rowspan="11" ; class="cell">jpms</td>
+                <td rowspan="5" ; class="cell cell_text_left">gst</td>
+                <td rowspan="3" ; class="cell cell_text_left">ct</td>
+                <td class="cell cell_text_left">ads</td>
+                <td class="cell">1</td>
+                <td class="cell">10</td>
+            </tr>
+            <tr>
+
+
+
+                <td class="cell cell_text_left">bto</td>
+                <td class="cell">2</td>
+                <td class="cell">15</td>
+            </tr>
+            <tr>
+
+
+
+                <td class="cell cell_text_left">csi</td>
+                <td class="cell">3</td>
+                <td class="cell">16</td>
+            </tr>
+            <tr>
+
+
+                <td rowspan="2" ; class="cell">vct</td>
+                <td class="cell cell_text_left">ads</td>
+                <td class="cell">4</td>
+                <td class="cell">10</td>
+            </tr>
+            <tr>
+
+
+
+
+                <td class="cell cell_text_left">bto</td>
+                <td class="cell">5</td>
+                <td class="cell">15</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="cell cell_text_right">Sub Total</td>
+                <td class="cell">6</td>
+                <td class="cell">15</td>
+            </tr>
+            <tr>
+                <td rowspan="4" ; class="cell cell_text_left">cst</td>
+                <td rowspan="3" ; class="cell cell_text_left">ct</td>
+                <td class="cell cell_text_left">ads</td>
+                <td class="cell">7</td>
+                <td class="cell">10</td>
+            </tr>
+            <tr>
+
+
+                <td class="cell cell_text_left">bto</td>
+                <td class="cell">8</td>
+                <td class="cell">10</td>
+            </tr>
+            <tr>
+
+
+
+                <td class="cell cell_text_left">csi</td>
+                <td class="cell">9</td>
+                <td class="cell">16</td>
+            </tr>
+            <tr>
+
+
+                <td class="cell">vct</td>
+                <td class="cell cell_text_left">ads</td>
+                <td class="cell">10</td>
+                <td class="cell">10</td>
+            </tr>
+            <tr>
+                <td colspan="3" class="cell cell_text_right">Sub Total</td>
+
+                <td class="cell">11</td>
+                <td class="cell">15</td>
+            </tr>
+
+        </tbody>
+
+
+    </table>
+    
+    <table class="table_properties">
+        <tr>
+            <th class=" table1_cell red"></th>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell red"></th>
+            <th class=" table1_cell greeny"></th>
+            <th class=" table1_cell red"></th>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell red"></th>
+        </tr>
+        <tr>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell red"></th>
+            <th class=" table1_cell greeny"></th>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell greeny"></th>
+            <th class=" table1_cell red"></th>
+            <th class="table1_cell"></th>
+        </tr>
+        <tr>
+            <th class=" table1_cell red"></th>
+            <th class=" table1_cell greeny"></th>
+            <th class="table1_cell"></th>
+            <th class="table1_cell"></th>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell greeny"></th>
+            <th class=" table1_cell red"></th>
+        </tr>
+        <tr>
+            <th class=" table1_cell greeny"></th>
+            <th class="table1_cell"></th>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell red"></th>
+            <th class="table1_cell"></th>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell greeny"></th>
+        </tr>
+        <tr>
+            <th class=" table1_cell red"></th>
+            <th class=" table1_cell greeny"></th>
+            <th class="table1_cell"></th>
+            <th class="table1_cell"></th>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell greeny"></th>
+            <th class=" table1_cell red"></th>
+        </tr>
+        <tr>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell red"></th>
+            <th class=" table1_cell greeny"></th>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell greeny"></th>
+            <th class=" table1_cell red"></th>
+            <th class="table1_cell"></th>
+        </tr>
+        <tr>
+            <th class=" table1_cell red"></th>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell red"></th>
+            <th class=" table1_cell greeny"></th>
+            <th class=" table1_cell red"></th>
+            <th class="table1_cell"></th>
+            <th class=" table1_cell red"></th>
+        </tr>
+    </table>
+    
+    <table class="table_properties">
+        <tr>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+        </tr>
+        <tr>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell green_light"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+        </tr>
+        <tr>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell crimson"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell green_light"></th>
+            <th class=" table2_cell green_salad"></th>
+            <th class=" table2_cell green_light"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell crimson"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+        </tr>
+        <tr>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell crimson"></th>
+            <th class=" table2_cell beige"></th>
+            <th class=" table2_cell crimson"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell green_light"></th>
+            <th class=" table2_cell green_salad"></th>
+            <th class=" table2_cell green_salad_light"></th>
+            <th class=" table2_cell green_salad"></th>
+            <th class=" table2_cell green_light"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell crimson"></th>
+            <th class=" table2_cell beige"></th>
+            <th class=" table2_cell crimson"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell burgundy"></th>
+        </tr>
+        <tr>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell crimson"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell green_light"></th>
+            <th class=" table2_cell green_salad"></th>
+            <th class=" table2_cell green_light"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell crimson"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+        </tr>
+        <tr>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell green_light"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell pirple"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+        </tr>
+        <tr>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell green"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell burgundy"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+            <th class=" table2_cell"></th>
+        </tr>
+    </table>
+   
+    <table class="table_properties">
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell green_tab3"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell green_tab3"></th>
+            <th class=" table3_cell green_tab3"></th>
+            <th class=" table3_cell green_tab3"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell green_tab3"></th>
+            <th class=" table3_cell green_tab3"></th>
+            <th class=" table3_cell green_tab3"></th>
+            <th class=" table3_cell green_tab3"></th>
+            <th class=" table3_cell green_tab3"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell green_tab3_light"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell green_tab3_salad"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+            <th class=" table3_cell green_tab3_salad_light"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell brown"></th>
+            <th class=" table3_cell brown_light"></th>
+            <th class=" table3_cell brown"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell brown"></th>
+            <th class=" table3_cell brown_light"></th>
+            <th class=" table3_cell brown"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell brown"></th>
+            <th class=" table3_cell brown_light"></th>
+            <th class=" table3_cell brown"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell brown"></th>
+            <th class=" table3_cell brown_light"></th>
+            <th class=" table3_cell brown"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+        <tr>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell brown"></th>
+            <th class=" table3_cell brown_light"></th>
+            <th class=" table3_cell brown"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+            <th class=" table3_cell black"></th>
+        </tr>
+    </table>
+</body>
+</html>
