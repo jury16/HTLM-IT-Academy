@@ -1,0 +1,324 @@
+
+<style>
+    body{
+        margin: 0px;
+    }
+    .grey {
+        background-color: #0005;
+    }
+    .white {
+        background-color: white;
+    }
+
+    .black {
+        background-color: #000000;
+    }
+    .table_cell {
+        width: 48px;
+        height: 48px;
+        
+    }
+    .cell_char_horisontal {
+        width: 48px;
+        height: 36px;
+        background-color: white;
+    }
+    .cell_char_vertical {
+        width: 36px;
+        height: 48px;
+        background-color: white;
+    }
+    .cell_border_top {
+        border-top: black solid;
+    }
+    .cell_border_right {
+        border-right: black solid;
+    }
+    .table_properties {
+        width: auto;
+        height: auto;
+        margin: auto;
+        border-spacing: 0px;
+        text-align: center;
+        
+    }
+    .trim {
+        margin: 10px auto;
+        width: 456px;
+        height: 456px;
+        border: black solid;
+        background-color: white;
+    }
+    .external_field {
+        margin: 50px auto;
+        width: 600px;
+        height: 600px;
+        border: black solid;
+        text-align: center;
+        background-color: cyan;
+    }
+    .chess_white_tour {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -99px -48px;
+        background-color: transparent;
+    }
+    .chess_white_tour_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -99px -48px;
+        background-color: #0005;
+    }
+    .chess_white_horse_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -196px -49px;
+        background-color: #0005;
+    }
+    .chess_white_horse {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -196px -49px;
+        background-color: transparent;
+    }
+    .chess_white_bishop {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -147px -49px;
+        background-color: transparent;
+    }
+    .chess_white_bishop_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -147px -49px;
+        background-color: #0005;
+    }
+    .chess_white_king_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -3px -49px;
+        background-color: #0005;
+    }
+    .chess_white_king {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -3px -49px;
+        background-color: white;
+    }
+    .chess_white_queen {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -51px -49px;
+        background-color: transparent;
+    }
+    .chess_white_queen_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -51px -49px;
+        background-color: #0005;
+    }
+    .chess_white_pawn {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -243px -49px;
+        background-color: transparent;
+    }
+    .chess_white_pawn_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -243px -49px;
+        background-color: #0005;
+    }
+    .chess_black_tour {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -99px 0px;
+        background-color: transparent;
+    }
+
+    .chess_black_tour_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -99px 0px;
+        background-color: #0005;
+    }
+
+    .chess_black_horse_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -196px 0px;
+        background-color: #0005;
+    }
+
+    .chess_black_horse {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -196px 0px;
+        background-color: transparent;
+    }
+
+    .chess_black_bishop {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -147px 0px;
+        background-color: transparent;
+    }
+
+    .chess_black_bishop_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -147px 0px;
+        background-color: #0005;
+    }
+
+    .chess_black_king_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -3px 0px;
+        background-color: #0005;
+    }
+
+    .chess_black_king {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -3px 0px;
+        background-color: white;
+    }
+
+    .chess_black_queen {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -50px 0px;
+        background-color: transparent;
+    }
+
+    .chess_black_queen_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -50px 0px;
+        background-color: #0005;
+    }
+
+    .chess_black_pawn {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -243px 0px;
+        background-color: transparent;
+    }
+
+    .chess_black_pawn_grey {
+        background: url('https://github.com/jury16/HTML-IT-Academy/raw/main/chess.png') no-repeat;
+        background-position: -243px 0px;
+        background-color: #0005;
+    }
+</style>
+<body>
+    <div class="external_field">
+        <h1>Шахматы</h1>
+        <div class="trim">
+            <div>
+                <table class="table_properties">
+
+                    <tr>
+                        <th class=" cell_char_horisontal"></th>
+                        <th class=" cell_char_horisontal ">a</th>
+                        <th class=" cell_char_horisontal">b</th>
+                        <th class=" cell_char_horisontal">c</th>
+                        <th class=" cell_char_horisontal">d</th>
+                        <th class=" cell_char_horisontal">e</th>
+                        <th class=" cell_char_horisontal">f</th>
+                        <th class=" cell_char_horisontal">g</th>
+                        <th class=" cell_char_horisontal">h</th>
+                        <th class=" cell_char_horisontal"></th>
+                    </tr>
+                    <tr>
+                        <th class=" cell_char_vertical cell_border_right">1</th>
+                        <th class=" table_cell cell_border_top chess_white_tour"></th>
+                        <th class=" table_cell grey cell_border_top chess_white_horse_grey"></th>
+                        <th class=" table_cell cell_border_top chess_white_bishop"></th>
+                        <th class=" table_cell grey cell_border_top chess_white_king_grey"></th>
+                        <th class=" table_cell cell_border_top chess_white_queen"></th>
+                        <th class=" table_cell grey cell_border_top chess_white_bishop_grey"></th>
+                        <th class=" table_cell cell_border_top chess_white_horse"></th>
+                        <th class=" table_cell grey cell_border_top cell_border_right chess_white_tour_grey"></th>
+                        <th class=" cell_char_vertical ">1</th>
+                    </tr>
+                    <tr>
+                        <th class=" cell_char_vertical cell_border_right">2</th>
+                        <th class=" table_cell grey chess_white_pawn_grey"></th>
+                        <th class=" table_cell chess_white_pawn"></th>
+                        <th class=" table_cell grey chess_white_pawn_grey"></th>
+                        <th class=" table_cell chess_white_pawn"></th>
+                        <th class=" table_cell grey chess_white_pawn_grey"></th>
+                        <th class=" table_cell chess_white_pawn"></th>
+                        <th class=" table_cell grey chess_white_pawn_grey"></th>
+                        <th class=" table_cell cell_border_right chess_white_pawn"></th>
+                        <th class=" cell_char_horisontal ">2</th>
+                    </tr>
+                    <tr>
+                        <th class=" cell_char_vertical cell_border_right">3</th>
+                        <th class=" table_cell "></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell "></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell"></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell"></th>
+                        <th class=" table_cell grey cell_border_right"></th>
+                        <th class=" cell_char_vertical ">3</th>
+                    </tr>
+                    <tr>
+                        <th class=" cell_char_vertical cell_border_right">4</th>
+                        <th class=" table_cell grey  "></th>
+                        <th class=" table_cell"></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell"></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell"></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell cell_border_right"></th>
+                        <th class=" cell_char_vertical ">4</th>
+                    </tr>
+                    <tr>
+                        <th class=" cell_char_vertical cell_border_right">5</th>
+                        <th class=" table_cell "></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell"></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell"></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell"></th>
+                        <th class=" table_cell grey cell_border_right"></th>
+                        <th class=" cell_char_vertical ">5</th>
+                    </tr>
+                    <tr>
+                        <th class=" cell_char_vertical cell_border_right">6</th>
+                        <th class=" table_cell grey "></th>
+                        <th class=" table_cell"></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell"></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell"></th>
+                        <th class=" table_cell grey"></th>
+                        <th class=" table_cell cell_border_right"></th>
+                        <th class=" cell_char_vertical ">6</th>
+                    </tr>
+                    <tr>
+                        <th class=" cell_char_vertical cell_border_right">7</th>
+                        <th class=" table_cell chess_black_pawn"></th>
+                        <th class=" table_cell grey chess_black_pawn_grey"></th>
+                        <th class=" table_cell chess_black_pawn"></th>
+                        <th class=" table_cell grey chess_black_pawn_grey"></th>
+                        <th class=" table_cell chess_black_pawn"></th>
+                        <th class=" table_cell grey chess_black_pawn_grey"></th>
+                        <th class=" table_cell chess_black_pawn"></th>
+                        <th class=" table_cell grey cell_border_right chess_black_pawn_grey"></th>
+                        <th class=" cell_char_vertical ">7</th>
+                    </tr>
+                    <tr>
+                        <th class=" cell_char_vertical cell_border_right">8</th>
+                        <th class=" table_cell grey chess_black_tour_grey"></th>
+                        <th class=" table_cell chess_black_horse"></th>
+                        <th class=" table_cell grey chess_black_bishop_grey"></th>
+                        <th class=" table_cell chess_black_king"></th>
+                        <th class=" table_cell grey chess_black_queen_grey"></th>
+                        <th class=" table_cell chess_black_bishop"></th>
+                        <th class=" table_cell grey chess_black_horse_grey"></th>
+                        <th class=" table_cell cell_border_right chess_black_tour"></th>
+                        <th class=" cell_char_vertical ">8</th>
+                    </tr>
+                    <tr>
+                        <th class=" cell_char_horisontal"></th>
+                        <th class=" cell_char_horisontal cell_border_top">a</th>
+                        <th class=" cell_char_horisontal cell_border_top">b</th>
+                        <th class=" cell_char_horisontal cell_border_top">c</th>
+                        <th class=" cell_char_horisontal cell_border_top">d</th>
+                        <th class=" cell_char_horisontal cell_border_top">e</th>
+                        <th class=" cell_char_horisontal cell_border_top">f</th>
+                        <th class=" cell_char_horisontal cell_border_top">g</th>
+                        <th class=" cell_char_horisontal cell_border_top">h</th>
+                        <th class=" cell_char_horisontal"></th>
+                    </tr>
+                </table>
+                
+            </div>
+        </div>
+    </div>
+</body>
