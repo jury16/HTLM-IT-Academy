@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>pagination</title>
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .menu_list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .menu_list_element {
+            float: left;
+            width: 40px;
+            height: 30px;
+            margin: 5px;
+            text-align: center;
+            background-color: #3F3F3F;
+        }
+
+        .menu_scroll {
+            width: 125px;
+            height: 30px;
+        }
+
+        .menu_link {
+            display: block;
+            text-align: center;
+            background-color: #3F3F3F;
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu_link_scroll {
+            display: block;
+            text-align: center;
+            background-color: #3F3F3F;
+            color: white;
+            text-decoration: none;
+        }
+
+        .menu_link:hover {
+            background-color: #FF6600;
+            width: 40px;
+            height: 30px;
+            text-decoration: none;
+        }
+
+        .menu_link_scroll:hover {
+            background-color: #FF6600;
+            width: 125px;
+            height: 30px;
+            text-decoration: none;
+        }
+
+        .menu_text {
+            padding-top: 3px;
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul class="menu_list">
+            <li class="menu_list_element menu_scroll ">
+                <a class="menu_link_scroll" href="#">
+                    <div class="menu_text">&lsaquo;&ensp;Предыдущая</div>
+                </a>
+            </li>
+            <li class="menu_list_element">
+                <a class="menu_link" href="#">
+                    <div class="menu_text">1</div>
+                </a>
+            </li>
+            <li class="menu_list_element">
+                <a class="menu_link" href="#">
+                <div class="menu_text">2</div>
+                    </a>
+            </li>
+            <li class="menu_list_element">
+                <a class="menu_link" href="#">
+                    <div class="menu_text">3</div>
+                    </a>
+            </li>
+            <li class="menu_list_element">
+                <a class="menu_link" href="#">
+                    <div class="menu_text">4</div>
+                </a>
+             </li>
+            <li class="menu_list_element">
+                <a class="menu_link" href="#">
+                    <div class="menu_text">5</div>
+                    </a>
+            </li>
+            <li class="menu_list_element">
+                <a class="menu_link" href="#">
+                    <div class="menu_text">6</div>
+                </a>
+            </li>
+            <li class="menu_list_element menu_scroll">
+                <a class="menu_link_scroll" href="#">
+                    <div class="menu_text">Следующая&ensp;&rsaquo;</div>
+                </a>
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>
