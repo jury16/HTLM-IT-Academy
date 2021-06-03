@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>bloc_menu</title>
+    <style>
+        body {
+            margin: 100px 50px;
+            background-color: #808080;
+        }
+
+        header {
+            margin: 30px 300px;
+            text-transform: uppercase;
+            color: white;
+            text-size-adjust: 150%;
+        }
+
+        .menu {
+            display: block;
+            width: 100%;
+        }
+
+        .menu__list_element:hover > .submenu__list,
+        .menu__list_element3:hover > .submenu__list,
+        .submenu__list_element:hover > .submenu3__list {
+            display: block;
+        }
+
+        .submenu__list_element:hover > .submenu__link {
+            background-color: #C6C6C6;
+            color: white;
+            background-image: url('https://github.com/jury16/HTML-IT-Academy/raw/main/blue_line_.png');
+            background-repeat: no-repeat;
+        }
+
+        .menu__list_element:hover > .menu__link
+        .menu__list_element3:hover > .menu__link {
+            background-color: #3F6595;
+        }
+
+
+        .menu__list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: relative;
+        }
+
+        .menu__list_element::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            display: block;
+            float: left;
+            top: 7px;
+            left: 20px;
+            background-image: url('https://github.com/jury16/HTML-IT-Academy/raw/main/sprites.png');
+            background-position: -52px 0px;
+        }
+
+        .menu__list_element {
+            position: relative;
+            float: left;
+            width: 200px;
+            height: 30px;
+        }
+
+        .menu__list_element2::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            display: block;
+            float: left;
+            top: 7px;
+            left: 20px;
+            background-image: url('https://github.com/jury16/HTML-IT-Academy/raw/main/sprites.png');
+            background-position: -25px 0px;
+        }
+
+        .menu__list_element2 {
+            position: relative;
+            float: left;
+            width: 150px;
+            height: 30px;
+        }
+
+        .menu__list_element3::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            display: block;
+            float: left;
+            top: 7px;
+            left: 20px;
+            background-image: url('https://github.com/jury16/HTML-IT-Academy/raw/main/sprites.png');
+            background-position: -105px 0px;
+        }
+
+        .menu__list_element3 {
+            position: relative;
+            float: left;
+            width: 200px;
+            height: 30px;
+        }
+
+        .menu__list_element4::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            display: block;
+            float: left;
+            top: 7px;
+            left: 20px;
+            background-image: url('https://github.com/jury16/HTML-IT-Academy/raw/main/sprites.png');
+            background-position: 0px 0px;
+        }
+
+        .menu__list_element4 {
+            position: relative;
+            float: left;
+            width: 150px;
+            height: 30px;
+        }
+
+        .menu__list_element5::before {
+            content: "";
+            width: 24px;
+            height: 24px;
+            position: absolute;
+            display: block;
+            float: left;
+            top: 7px;
+            left: 20px;
+            background-image: url('https://github.com/jury16/HTML-IT-Academy/raw/main/sprites.png');
+            background-position: -76px 0px;
+        }
+
+        .menu__list_element5 {
+            position: relative;
+            float: left;
+            width: 250px;
+            height: 30px;
+        }
+
+
+        .menu__link {
+            display: block;
+            text-align: left;
+            color: white;
+            background-color: #2D2D2D;
+            text-decoration: none;
+            padding: 10px 50px;
+        }
+
+            .menu__link:hover {
+                background-color: #3F6595;
+                text-decoration: none;
+            }
+
+        .submenu__list {
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+        }
+
+        .submenu__list_element {
+            width: 250px;
+            height: 40px;
+            text-align: left;
+        }
+
+        .submenu__link {
+            display: block;
+            color: #897B78;
+            background-color: white;
+            text-decoration: none;
+            padding: 11px;
+        }
+
+            .submenu__link:hover {
+                background-color: #C6C6C6;
+                color: white;
+                text-decoration: none;
+                background-image: url('Capture.PNG');
+                background-repeat: no-repeat;
+            }
+
+        .submenu3__list {
+            left: 100%;
+            top: 50%;
+            display: none;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            position: absolute;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        Много-уровневое горизонтальное меню
+    </header>
+    <div class="menu">
+        <ul class="menu__list">
+            <li class="menu__list_element">
+                <a class="menu__link" href="#">Главная</a>
+                <ul class="submenu__list">
+                    <li class="submenu__list_element"><a class="submenu__link" href="#">Подменю_1</a></li>
+                    <li class="submenu__list_element"><a class="submenu__link" href="#">Подменю_2</a></li>
+                    <li class="submenu__list_element"><a class="submenu__link" href="#">Подменю_3</a></li>
+                </ul>
+            </li>
+
+            <li class="menu__list_element2"><a class="menu__link" href="#">О нас</a></li>
+            <li class="menu__list_element3">
+                <a class="menu__link" href="#">Портфолио</a>
+                <ul class="submenu__list">
+                    <li class="submenu__list_element"><a class="submenu__link" href="#">Подменю_1</a></li>
+                    <li class="submenu__list_element">
+                        <a class="submenu__link" href="#">Уровень 3 меню</a>
+                        <ul class="submenu3__list">
+                            <li class="submenu__list_element"><a class="submenu__link" href="#">Подменю_4</a></li>
+                            <li class="submenu__list_element"><a class="submenu__link" href="#">Подменю_5</a></li>
+                            <li class="submenu__list_element"><a class="submenu__link" href="#">Подменю_6</a></li>
+                        </ul>
+
+                    </li>
+
+                </ul>
+
+            </li>
+            <li class="menu__list_element4"><a class="menu__link" href="#">Блог</a></li>
+            <li class="menu__list_element5"><a class="menu__link" href="#">Контакты</a></li>
+        </ul>
+
+    </div>
+</body>
+
+</html>
