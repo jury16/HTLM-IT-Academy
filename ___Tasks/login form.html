@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>login_form</title>
+
+    <style>
+        body {
+            margin: 50px;
+        }
+
+        .wrapper {
+            position: relative;
+            width: 800px;
+            height: 800px;
+            background-color: #F1C78B;
+            background-image: url('brown_paper.jpg');
+            opacity: 0.9;
+        }
+        .tape {
+            position: absolute;
+            width: 320px;
+            height: 50px;
+            background-color: black;
+            opacity: 0.1;
+            top: -50px;
+            left: 20px;
+        }
+        .paper {
+            position: absolute;
+            width: 400px;
+            height: 275px;
+            background-color: white;
+            box-shadow: 0px 10px 13px -7px #000000, 2px 10px 20px 9px rgba(0,0,0,0.13);
+            left: 200px;
+            bottom: 350px;
+        }
+
+
+        .paper_text {
+            position: absolute;
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+            color: black;
+            font-weight: bold;
+            top: 25px;
+            left: 20px;
+            text-shadow: 0 0 1px rgba(0,0,0,0.5);
+        }
+
+        .login_form {
+            position: relative;
+            width: 350px;
+            height: 150px;
+            border: solid #FF7E68;
+            border-radius: 10px;
+            background: #FF7E68;
+            
+            top: 5px;
+        }
+        .text {
+            position: absolute;
+            bottom: 0px;
+            left: 40px;
+            font-size: 17px;
+            text-transform: none;
+            font-weight: normal;
+            filter: blur(0px);
+        }
+        .login, .password {
+            margin: 10px 20px -5px;
+            height: 40px;
+            text-indent: 10px;
+            width: 85%;
+            border-radius: 10px;
+            border: 1px solid #FF7E68;
+            background: #FFD5CE;
+            outline: none;
+        }
+
+        .password {
+        }
+
+        .send {
+            position: absolute;
+            top: 25px;
+            right: 8px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            border: 5px solid #FF7E68;
+            text-align: center;
+            background: #FF5335;
+            outline: none;
+            background-image: url('arrow.png');
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+
+
+
+
+    </style>
+</head>
+
+
+
+
+<body>
+    <div class="wrapper">
+        <div class="paper">
+            <div class="paper_text">
+                <p> &mdash;&mdash;&emsp;Авторизируйтесь&emsp;&mdash;&mdash;</p>
+                <div class="tape"></div>
+                <div class="login_form">
+                    <input type="text" placeholder="Логин" class="login">
+                    <input type="password" placeholder="Пароль" class="password">
+                    <input type="submit" class="send" value="">
+                    <p class="text">Забыли логин или пароль? <a href="#">Напомним!</a></p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
