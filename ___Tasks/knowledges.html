@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>knowledges</title>
+<style>
+    p {
+        text-indent: 25px;
+       
+    }
+    .wrapper {
+        margin: 50px auto;
+        width: 850px;
+        height: 450px;
+        background-color: #F8F8F8;
+    }
+    .container {
+        padding: 10px 0 0;
+        position: relative;
+        top: 20px;
+        left: 25px;
+        width: 800px;
+        height: 400px;
+        background-color: white;
+    }
+
+    .html, .css, .javascript, .jquery {
+        margin: 0 20px;
+        width: 700px;
+        height: 20px;
+        box-shadow: 0px 1px 20px -13px #000000 inset;
+        border-radius: 50px;
+    }
+
+    .html__load {
+        width: 0px;
+        height: 20px;
+        background: #FCBD63;
+        border-radius: 50px;
+        animation: html 5s 1;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes html {
+        from {
+            width: 0;
+            border-radius: 50px;
+        }
+
+        to {
+            width: 80%;
+        }
+    }
+
+    .css__load {
+        width: 0px;
+        height: 20px;
+        background: #9479CE;
+        border-radius: 50px;
+        animation: css 5s 1;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes css {
+        from {
+            width: 0;
+            border-radius: 50px;
+        }
+
+        to {
+            width: 70%;
+        }
+    }
+
+
+    .javascript__load {
+        width: 0px;
+        height: 20px;
+        background: #E56057;
+        border-radius: 50px;
+        animation: javascript 5s 1;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes javascript {
+        from {
+            width: 0;
+            border-radius: 50px;
+        }
+
+        to {
+            width: 60%;
+        }
+    }
+
+
+    .jquery__load {
+        width: 0px;
+        height: 20px;
+        background: #7CBD76;
+        border-radius: 50px;
+        animation: jquery 5s 1;
+        animation-delay: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    @keyframes jquery {
+        from {
+            width: 0;
+            border-radius: 50px;
+        }
+
+        to {
+            width: 50%;
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <p>Мои знания:</p>
+            <p>HTML</p>
+            <div class="html">
+                <div class="html__load"></div>
+            </div>
+
+            <p>CSS</p>
+            <div class="css">
+                <div class="css__load"></div>
+            </div>
+
+            <p>JavaScript</p>
+            <div class="javascript">
+                <div class="javascript__load"></div>
+            </div>
+
+            <p>JQuuery</p>
+            <div class="jquery">
+                <div class="jquery__load"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
