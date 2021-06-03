@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>blank-slider.html</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: black;
+        }
+        .slider {
+            
+            position: relative;
+            width: 1200px;
+            height: 425px;
+            left: 50%;
+            margin-left: -600px;
+            font-family: 'Open Sans', sans-serif;
+            color: white;
+        }
+
+        .scroll_link { 
+            background-image: url('https://github.com/jury16/HTML-IT-Academy/raw/main/blank%20slider%20images/prev-next-sprite.png'); 
+            background-position: 20px 160px; 
+            background-repeat: no-repeat; 
+            position: absolute; color: whitesmoke; 
+            font-size: 144px; 
+            text-decoration: none; 
+            width: 60px; 
+            top: 0; bottom: 0; left: 0; right: 0; 
+
+        }
+
+        .scrol_link_right {
+            background-position: -30px 160px;
+            left: initial;
+        }
+        .image {
+            margin: auto;
+        }
+
+
+        .content {
+            position: absolute;
+            font-weight: bold;
+            text-align: center;
+            font-size: 32px;
+            top: 0; left: 0; bottom: 0; right: 0;
+            margin: 95px;            
+        }   
+
+        .border{
+            border-style: solid none solid none;
+            border-color: white;
+        }
+
+        .navigation_block {
+            width: 20px;
+            height: 20px;
+            float: left;
+            background-color: white;
+        }
+        .slide_active {
+            background-color: orange;
+        }
+        .navigation_block + .navigation_block {
+            margin-left: 20px;
+        }
+
+        .navigation {
+            padding: 0;
+            display: inline-block;
+            list-style-type: none;
+            
+        }
+        .nav_bar {
+            position: absolute;
+            text-align: center;
+            width: 100%;
+            top: 365px;
+        }
+        .slides{
+            display: inline-block;
+            width: 20px;
+            height: 20px;
+
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <div class="slider">
+        <div class="slide">
+            <img src="https://github.com/jury16/HTML-IT-Academy/raw/main/blank%20slider%20images/slider-img-01.jpg" />
+        </div>
+        <div class="content">
+            <h2>
+                <span class="border">КОМФОРТНАЯ ОДЕЖДА </span>
+            </h2>
+            <p>для всех видов спорта</p>
+
+        </div>
+        <div class="scroll">
+            <a class="scroll_link" href="#"></a>
+        </div>
+        <div>
+            <a class="scroll_link scrol_link_right" href="#"></a>
+        </div>
+    </div>
+    <div class="nav_bar">
+        <ol class="navigation">
+            <li class="navigation_block"><a class="slides" href="#"></a></li>
+            <li class="navigation_block slide_active"><a class="slides" href="#"></a></li>
+            <li class="navigation_block"><a class="slides" href="#"></a></li>
+            <li class="navigation_block"><a class="slides" href="#"></a></li>
+            <li class="navigation_block"><a class="slides" href="#"></a></li>
+            <li class="navigation_block"><a class="slides" href="#"></a></li>
+        </ol>
+    </div>
+
+
+</body>
+</html>
