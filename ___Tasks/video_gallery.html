@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content_position="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+    <title>video_gallery</title>
+    <style>
+        body {
+            margin: 10px 0 30px;
+            background-color: white;
+        }
+        h2,p {
+            clear: both;
+        }
+        .content_position {
+            margin: 0 20px;
+            height: 100%;
+        }
+
+        .top {
+            margin: 0 auto;
+            max-width: 980px;
+            height: 110px;
+            background-image: url('https://github.com/jury16/HTML-IT-Academy/raw/main/robots_small.PNG');
+            background-color: #FFFFFF;
+            background-position: right center;
+            background-repeat: no-repeat;
+            
+        }
+        .head {
+            display: inline-block;
+            margin: 0px;
+            font-size: 72px;
+            max-width: 580px;
+        }
+
+
+        .header {
+            max-width: 980px;
+            margin: 10px auto 0;
+            height: 60px;
+            background-color: #002144;
+            text-align: center;
+            width: 100%;
+        }
+
+        .header__text {
+            font-family: italic;
+            width: 100%;
+            padding: 15px;
+            margin: auto;
+            color: white;
+        }
+
+        .main_video {
+            width: 100%;
+       
+        }
+        .two_videos {
+            max-width: 48%;
+            float: left;
+            text-align: center;
+        }
+        .context .two_videos:not(:last-child) {
+            margin-right: 1.5%;
+        }
+        .three_videos {
+            max-width: 32%;
+            float: left;
+            text-align: center;
+        }
+        .video {
+            max-width: 490px;
+
+        }
+        .video_3 {
+            max-width: 325px;
+        }
+        .context .three_videos:not(:last-child){
+            margin-right: 1.5%;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+        .context {
+            margin: 25px auto;
+            max-width: 980px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="content_position">
+        <div class="top">
+            <h3 class="head"> Boston Dinamics</h3>
+
+        </div>
+    </div>
+    <div class="content_position clearfix">
+        <div class="header"><h3 class="header__text">The future is already here</h3></div>
+    </div>
+
+    <div class="content_position">
+
+        <div class="context">
+            <h2>What is Boston Dynamics?</h2>
+            <p>
+                Boston Dynamics is a world leader in mobile robots, tackling some of the toughest robotics challenges. We combine the principles of dynamic control and balance with sophisticated mechanical designs, cutting-edge electronics, and next-generation software for high-performance robots equipped with perception, navigation, and intelligence. Boston Dynamics has an extraordinary and fast-growing technical team of engineers and scientists who seamlessly combine advanced analytical thinking with bold engineering and boots-in-the-mud practicality.
+            </p>
+            <div class="main_video">
+                <iframe width="100%" height="461" src="https://www.youtube.com/embed/F843AqfNsaA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+            <h2>What makes Boston Dinamics Unique?</h2>
+            <p>
+                One of the things that makes Boston Dynamics unique is the ambition to build dynamically stable, legged machines. Marc Raibert began tackling this problem before anyone else in the world. And we’ve been at it since, almost 35 years. We’ve been inspired by and worked towards this goal for so long that we have invented techniques to make robots work that you can’t find in any textbook or technical article. The result is that we now know how to build walking machines of any size, shape, actuator style or powerplant. These unique designs enable our robots to conquer terrains inaccessible to others, and perform automated tasks in unstructured environments.
+            </p>
+            <div class="two_videos">
+                <iframe width="632" height="355" src="https://www.youtube.com/embed/fUyU3lKzoio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+            </div>
+            <div class="two_videos">
+                <iframe width="632" height="355" src="https://www.youtube.com/embed/vjSohj-Iclc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video"></iframe>
+
+            </div>
+            <h2>Do Boston Dynamics robots use artifical intelegence?</h2>
+            <p>
+                Spot uses a lot of intelligence to navigate the world. We call this “athletic intelligence”’ as the robot walks, climbs stairs, avoids obstacles, traverses difficult terrain and autonomously follows preset routes without constant input from users. Out-of-the-box, Spot has a very simple understanding of the world to enable it to walk more steadily - i.e. it can identify stairs, body obstacles, edges that might cause it to trip. Applications such as stopping an autonomous mission when a person is nearby or responding to voice commands can be added to the robot using our developer tools and payload ports.
+            </p>
+
+            <div class="three_videos ">
+                <iframe width="632" height="355" src="https://www.youtube.com/embed/fUyU3lKzoio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video_3"></iframe>
+            </div>
+            <div class="three_videos ">
+                <iframe width="632" height="355" src="https://www.youtube.com/embed/fUyU3lKzoio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video_3"></iframe>
+            </div>
+            <div class="three_videos ">
+                <iframe width="632" height="355" src="https://www.youtube.com/embed/fUyU3lKzoio" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="video_3"></iframe>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
