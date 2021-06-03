@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title></title>
+   <style>
+
+       .wrapper {
+           position: relative;        
+           width: 600px;
+           height: 600px;
+           border: 1px solid red;
+           margin: 50px auto;
+           cursor: pointer;
+       }
+       .line {
+           position: absolute;
+           width: 20px;
+           height: 100px;
+           background-color: palevioletred;
+           top: 500px;
+           left: 200px;
+       }
+       .square {
+           position: absolute;
+           top: 50px;
+           left: 400px;
+           width: 100px;
+           height: 100px;
+           background-color: greenyellow;
+           animation: square-move 5s infinite;
+       }
+       .ball {
+           position: absolute;
+           top: 580px;
+           width: 20px;
+           height: 20px;
+           border-radius: 50%;
+           background-color: red;
+           cursor: pointer;
+       }
+       .ball1 {
+           position: absolute;
+           top: 300px;
+           width: 50px;
+           height: 50px;
+           border-radius: 50%;
+           background-color: blue;
+           
+           
+       }
+
+       .trans {
+           position: absolute;
+           top: 0px;
+           left: 0px;
+           width: 60px;
+           height: 60px;
+           background-color: black;
+       }
+       .wrapper:hover .ball {
+           animation: ball-move 5s infinite;
+       }
+       .wrapper:hover .ball1 {
+           animation: ball1-move 3s infinite;
+       }
+       @keyframes ball-move {
+           0%{
+               top: 580px;
+               left: 0px;
+           }
+           25% {
+               top: 580px;
+               left: 180px;
+           }
+
+           50% {
+               top: 500px;
+               left: 180px;
+           }
+
+           75% {
+               top: 500px;
+               left: 0px;
+           }
+
+           100% {
+               top: 580px;
+               left: 0px;
+           }
+       }
+
+       @keyframes square-move {
+           0% {
+               transform: rotate(0deg);
+               background-color: red;
+           }
+
+           20% {
+               transform: rotate(75deg);
+               background-color: yellow;
+           }
+
+           40% {
+               transform: rotate(150deg);
+               background-color: grey;
+           }
+
+           65% {
+               transform: rotate(225deg);
+               background-color: blue;
+           }
+           80% {
+               transform: rotate(300deg);
+               background-color: pink;
+           }
+           100% {
+               transform: rotate(360deg);
+               background-color: red;
+           }
+
+
+
+       }
+       .wrapper:hover .line {
+           animation: line-move 10s infinite;
+       }
+       .wrapper:hover .trans {
+           animation: trans-move 15s infinite;
+       }
+       @keyframes line-move {
+           0% {
+               top:500px;
+               left: 200px;
+           }
+
+           25% {
+               top: 80px;
+               left: 100px;
+               transform: rotate(90deg);
+           }
+
+           50% {
+               top: 30px;
+               left: 580px;
+               transform: rotate(180deg);
+           }
+
+           75% {
+               transform: rotate(270deg);
+               top: 540px;
+               left: 400px;
+           }
+           100% {
+               transform: rotate(360deg);
+               top: 500px;
+               left: 200px;
+           }
+       }
+       @keyframes trans-move {
+           0% {
+               top: 0px;
+               left: 0px;
+           }
+
+           25% {
+               top: 300px;
+               left: 300px;
+               border-radius: 25%;
+               background-color: grey;
+           }
+
+           50% {
+               top: 540px;
+               left: 540px;
+               border-radius: 50%;
+               background-color: yellow;
+           }
+
+           75% {
+               top: 300px;
+               left: 300px;
+               border-radius: 25%;
+               background-color: grey;
+           }
+
+           100% {
+               top: 0px;
+               left: 0px;
+               border-radius: 0px;
+               background-color: black;
+           }
+       }
+       @keyframes ball1-move {
+           from {
+               top: 300px;
+               left: 0px;
+           }
+
+           to {
+               top: 300px;
+               left: 540px;
+           }
+
+           
+       }
+   </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="ball"></div>
+        <div class="ball1"></div>
+        <div class="square"></div>
+        <div class="line"></div>
+        <div class="trans"></div>
+    </div>
+</body>
+
+</html>
