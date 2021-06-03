@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>buttons</title>
+   <style>
+       body{
+           margin: 50px 50px;
+       }
+       .position{
+           margin-left: 10px;
+       }
+
+       .button1:hover {
+           transform: scale(1.1,1.5);
+           color: red;
+       }
+       button:active{
+           border: 3px solid red;
+       }
+       .button2:hover {
+           box-shadow: 5px 5px;
+           text-shadow: 1px 1px 2px green;
+       }
+     
+        .button3:hover {
+            color: white;
+            background: black;
+            transition: all 0.9s ease 0s;
+        }
+       .button4{
+           width: 90px;
+           
+
+       }
+           .button4:hover {
+               width: 150px;
+               transition: width 2s;
+           }
+       .button5 {
+           background: linear-gradient(green, lightgreen);
+
+       }
+       .button6:hover {
+           width: 80px;
+           height: 80px;
+           border-radius: 50%;
+           outline: none;
+       }
+      
+   </style>
+</head>
+
+<body>
+    <button class="position button1">BUTTON_1</button>
+    <button class="position button2">BUTTON_2</button>
+    <button class="position button3">BUTTON_3</button>
+    <button class="position button4">BUTTON_4</button>
+    <button class="position button5">BUTTON_5</button>
+    <button class="position button6">BUTTON_6</button>
+
+</body>
+
+</html>
