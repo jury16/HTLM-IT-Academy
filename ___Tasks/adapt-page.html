@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content_position="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <title>adapt_page</title>
+    <style>
+        body {
+            margin: 0;
+            background-color: white;
+        }
+
+        .content_position {
+            margin: 0 20px;
+            height: 100%;
+        }
+
+        .top {
+            margin: 0 auto;
+            max-width: 980px;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        .header {
+            max-width: 980px;
+            margin: -4px auto 0;
+            height: 60px;
+            color: white;
+            text-align: center;
+            background-color: #C2C2C2;
+        }
+
+        .header__text {
+            padding: 15px;
+            margin: auto;
+            color: black;
+        }
+
+        .header_font {
+            background: #C2C2C2;
+        }
+
+        .block__news {
+            margin: 25px auto;
+            max-width: 980px;
+        }
+
+        .news {
+            max-width: 23.5%;
+            float: left;
+            background-color: #F8F8F8;
+            text-align: center;
+        }
+
+        .block__news .news:not(:last-child) {
+            margin-right: 2%;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: block;
+            clear: both;
+        }
+
+        .news__footer {
+            min-width: 140px;
+            background-color: #68A4C4;
+            padding: 15px 0;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .context {
+            margin: 25px auto;
+            max-width: 980px;
+        }
+
+        .footer {
+            max-width: 980px;
+            height: 80px;
+            background-color: #68A4C4;
+            margin: 0 auto;
+        }
+
+        .footer_text {
+            max-width: 980px;
+            margin: auto;
+            padding: 30px 0px;
+            font-size: 12px;
+            color: #F8F8F8;
+        }
+
+        .footer_font {
+            background-color: #68A4C4;
+        }
+
+
+        @media screen and (max-width: 768px) {
+            .top {
+                margin: auto 10px;
+                width: auto;
+                height: auto;
+                min-width: 260px;
+            }
+
+            .header__text {
+                padding: 20px;
+            }
+
+            .header {
+                min-width: 320px;
+            }
+
+            .block__news {
+                max-width: 100%;
+                min-width: 280px;
+                margin: 25px 0px;
+            }
+
+            .news {
+                max-width: 100%;
+                margin: 10px auto;
+                min-width: 280px;
+            }
+
+            .block__news .news:not(:last-child) {
+                margin-right: 0px;
+            }
+
+            .context {
+                margin: 25px 10px;
+                display: block;
+                min-width: 260px;
+            }
+
+            .footer_text {
+                padding: 30px 20px;
+            }
+
+            .footer_font {
+                background-color: #68A4C4;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!--Header-->
+
+    <div class="content_position">
+        <div class="top">
+            <img src="https://github.com/jury16/HTML-IT-Academy/raw/main/Office-conference.jpeg" height="300" width="980" />
+        </div>
+    </div>
+    <div class="header_font clearfix">
+        <div class="header"><h3 class="header__text">Заголовок первого уровня</h3></div>
+    </div>
+
+
+    <!--/Header-->
+    <!--News-->
+    <div class="content_position">
+        <div class="block__news clearfix">
+            <div class="news">
+                <div>
+                    <h2>News 1</h2>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </p>
+
+                </div>
+                <div class="news__footer"><a href="#">Читать далее</a></div>
+
+            </div>
+            <div class="news">
+                <div>
+                    <h2>News 2</h2>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </p>
+                    <div class="news__footer"><a href="#">Читать далее</a></div>
+                </div>
+
+            </div>
+            <div class="news">
+                <div>
+                    <h2>News 3</h2>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </p>
+                    <div class="news__footer"><a href="#">Читать далее</a></div>
+                </div>
+
+            </div>
+            <div class="news">
+                <div>
+                    <h2>News 4</h2>
+                    <p>
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                    </p>
+                    <div class="news__footer"><a href="#">Читать далее</a></div>
+                </div>
+
+            </div>
+        </div>
+        <!--/News-->
+        <!--Context-->
+        <div class="context">
+            <h1>What is Lorem Ipsum?</h1>
+            <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+            <h1>Why do we use it?</h1>
+            <p>
+                It is a long established fact that a reader will be distracted by the readable content_position of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'content_position here, content_position here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+            </p>
+            <h1>Where does it come from?</h1>
+            <p>
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+            </p>
+        </div>
+    </div>
+    <!--/Context-->
+    <!--Footer-->
+    <div class="footer_font clearfix">
+        <div class="content_position">
+            <div class="footer">
+                <p class="footer_text">&copy; Copyright 2017</p>
+            </div>
+        </div>
+    </div>
+    <!--/Footer-->
+
+
+</body>
+
+</html>
